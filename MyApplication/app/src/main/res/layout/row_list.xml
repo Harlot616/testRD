@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    app:mode="same_level"
+    app:dragEdge="right">
+
+    <!--RIGHT-->
+    <LinearLayout
+        android:id="@+id/bttnDelete"
+        android:orientation="vertical"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:background="@color/row_background_delete">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/row_text_delete"
+            android:text="@string/bttn_delete"/>
+    </LinearLayout>
+
+    <!-- Main -->
+    <LinearLayout
+        android:id="@+id/rowList"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/row_title_color"
+            android:text="Texto de prueba"/>
+
+        <TextView
+            android:id="@+id/author_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="13sp"
+            android:textColor="@color/row_title_author_create"
+            android:text="Daniel H. - 25m"/>
+    </LinearLayout>
+</com.chauthai.swipereveallayout.SwipeRevealLayout>
